@@ -1,0 +1,260 @@
+/*cascading style sheets*/
+/*CS selector*/
+body {
+  font-family: "Lilita One", cursive;
+}
+/* theme css */
+.wrkColor {
+  color: hsl(32, 31%, 59%);
+}
+.wrkH1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.workLine {
+  height: 1px;
+  width: 180px;
+  margin-top: -35px;
+}
+.btn {
+  color: black;
+  background-color: hsl(32, 31%, 59%);
+}
+
+/* ------navigation bar ------*/
+#wrkNav {
+  position: fixed;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: right;
+  z-index: 10;
+}
+#wrkNav ul {
+  text-align: center;
+}
+#wrkNav ul li a {
+  color: #b0a08a;
+  text-decoration: none;
+  font-size: 16px;
+}
+#wrkNav ul li a:hover {
+  color: white;
+}
+#wrkNav img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 1px;
+}
+#wrkNav ul li,
+#wrkNav ul {
+  display: inline-block;
+  text-align: center;
+}
+
+/* ------hero image------ */
+header {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* about section */
+#about p {
+  text-align: left;
+  font-size: 25px;
+}
+.aboutText {
+  background-color: hsl(32, 31%, 59%);
+  border-radius: 10px;
+}
+.aboutPic img {
+  max-height: 500px;
+  height: auto;
+  width: 98%;
+}
+
+/* --------services section-------- */
+#service {
+  background-color: #f2f2f2;
+}
+.serviceHeader p {
+  font-size: 18px;
+}
+.icons {
+  vertical-align: top;
+}
+.serviceBox1 i,
+.serviceBox2 i {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 25px;
+}
+.serviceBox1 i:hover,
+.serviceBox2 i:hover {
+  box-shadow: 5px 5px;
+}
+.serviceBox1 i {
+  background: black;
+}
+.serviceBox2 i {
+  background: hsl(32, 31%, 59%);
+  color: black;
+}
+/* this is for mobile use of the modular  */
+.clickable {
+  cursor: pointer;
+}
+/* --------pricing------------ */
+#pricing {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  transition: width 2s ease, height 0.5s;
+}
+#pricing.clicked {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  background: white;
+  padding: 40px;
+}
+/* --------gallery------------ */
+#galleries {
+  background-color: #f2f2f2;
+}
+.gallery {
+  display: none;
+  background-color: #f2f2f2;
+  padding-bottom: 10px;
+}
+.currentView {
+  display: block;
+}
+.webGallery {
+  display: none;
+}
+/*--------contact------------*/
+#contact {
+  background-color: black;
+}
+
+#contact a {
+  text-decoration: none;
+}
+#contact p {
+  color: white;
+}
+.contactPic {
+  height: 235px;
+  border-radius: 90px;
+}
+
+/* mobile edits */
+@media (max-width: 426px) {
+  #about p {
+    font-size: 20px;
+    text-align: center;
+  }
+  /* prices mobile */
+  #pricing.clicked {
+    padding: 10px 0px;
+  }
+  /* for gallery when is mobile view */
+  .gallery {
+    display: block !important;
+  }
+  .webGallery {
+    display: block;
+  }
+  .mobileGallery {
+    display: none;
+  }
+  #bodyGallery {
+    padding: 0px;
+  }
+  .container.gallery-container {
+    min-height: 0 !important;
+    background-color: #f2f2f2 !important;
+  }
+}
+/* gallery css */
+#bodyGallery {
+  background-image: linear-gradient(
+    to top,
+    #ecedee 0%,
+    #eceeef 75%,
+    #e7e8e9 100%
+  );
+  min-height: 100vh;
+  font: normal 16px sans-serif;
+  padding: 60px 0;
+  margin-top: 10px;
+}
+.selected {
+  color: hsl(32, 31%, 59%);
+  background-color: black;
+}
+
+.container.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: #888;
+  font-size: 18px;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  #bodyGallery {
+    padding: 0;
+  }
+
+  .container.gallery-container {
+    border-radius: 0;
+  }
+}

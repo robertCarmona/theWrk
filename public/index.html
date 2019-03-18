@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TheWRK</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.8.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.8.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.8.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- animation css file -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- reset css file -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- gallery links -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+    rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"/>
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+    <!-- font awsome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"/>
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+		<nav id = "wrkNav" class = "pt-2">
+        <image src = "img/hero.png" alt="Logo picture">
+        <ul>
+          <li class = "pr-2">
+            <a href="#service">Services</a>
+          </li>
+          <li class = "pr-2">
+            <a href="#pricing" class="pricing">Pricing</a>
+          </li>
+          <li class = "pr-2">
+            <a href="#galleries">Gallery</a>
+          </li>
+          <li class = "pr-3">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- hero picture -->
+      <header>
+      </header>
+  
+      <!-- about section -->
+      <div id="about">
+        <div class = "container text-center">
+          <div class = "row">
+            <div class = "col-12 text-center">
+              <h1 class = "wrkColor wrkH1">Mission</h1>
+              <img class= "workLine" src ="img/theWRKline.png" alt = "underline">
+            </div>
+            <div class = "aboutPic col-md-4 col-sm-12">
+              <img class = "img-responsive" src = "img/mainPic.jpg" alt="about picture">
+            </div>
+            <div class = "aboutText col-md-7 col-sm-12 mt-2 ml-md-auto">
+              <p>
+                Our goal is to help businesses, creatives, and anyone who wants to build 
+                their brand and promote their story. 
+                We do this by gaining more brand awareness 
+                through social media, digital, and traditional platforms. 
+                Our main service is Visual Marketing. Whatʼs Visual Marketing? 
+                Anything relating to a photo, online content, a graphic, and/or video 
+                that appeals to the eye and is used for promoting, selling, and distributing , 
+                product or service. Visual Marketing services include social media management & 
+                marketing, consulting, photography/ videography for Businesses, Events, 
+                Life Style, Portrait, and Real Estate. 
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- services -->
+      <div class = "mt-4 p-4" id="service">
+        <div class = "container text-center">
+          <div class = "row">
+  
+            <!-- service header -->
+            <div class = "col-12 text-center serviceHeader">
+              <h1 class = "wrkColor wrkH1">Services</h1>
+              <img class= "workLine" src ="img/theWRKline.png" alt="underline">
+              <p>Social Media Management & Marketing - Social Media has everyones attention in todays world. 
+                Instagram and YouTube are just two of the few that contribute to this shift. 
+                According to Brandwatch “122 Amazing Social Media Statistics and Facts” there are over 3 billion 
+                active users on social media and the average time spent of social is 116 minutes a day. 
+                Today you must have a social media presence to tell your brands story, promote yourself, 
+                and create awareness of your brand. THE WRK offers:
+              </p>
+            </div>
+  
+            <!-- service body -->
+            <div class = "container icons text-center">
+              <div class = "row">
+  
+                <!-- service box 1 begins -->
+                <div class = "serviceBox1 col-md-3 col-sm-12 pt-2 mt-2">
+                  <i class="wrkColor fas fa-tasks clickable" data-toggle="modal" data-target="#service1Modal1"></i>
+                  <h3 class = "my-3">Social Media Management</h3>
+  
+                  <!-- Modal -->
+                  <div class="modal fade" id="service1Modal1" tabindex="-1" role="dialog" aria-labelledby="service1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title wrkColor" id="service1ModalLabel">Social Media Management</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Posting on Instgram, engaging with new and existing followers, updating content on LinkedIn and FaceBook, uploading
+                            videos on YouTube takes up a lot of time. THE WRK can give you back that
+                            time while you can focus on other important business needs.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <!-- service box 2 begins -->
+                <div class = "serviceBox2 col-md-3 col-sm-12 pt-2 mt-2">
+                  <i class="far fa-newspaper clickable" data-toggle="modal" data-target="#serviceModal2"></i>
+                  <h3 class = "my-3">Social Media Marketing</h3>
+  
+                  <!-- Modal -->
+                  <div class="modal fade" id="serviceModal2" tabindex="-1" role="dialog" aria-labelledby="serviceModal2Label" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title wrkColor" id="serviceModal2Label">Social Media Marketing</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Itʼs all about reaching new customers and
+                              providing value to your existing customer base. 
+                              Social media marketing is the best way to do this in 2019. 
+                              THE WRK creates amazing visual content to engage new and existing customers. 
+                              Create amazing content + give value to your followers/subscribers = gain new customers/followers/subscribers and $$$. 
+                              This can be done through consistent organic reach or combining with paid social advertising.
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+  
+                <!-- service box 3 begins -->
+                <div class = "serviceBox1 col-md-3 col-sm-12 pt-2 mt-2">
+                  <i class="wrkColor fas fa-camera-retro clickable" data-toggle="modal" data-target="#serviceModal3"></i>
+                  <h3 class = "my-3">Photos & Videos</h3>
+  
+                  <div class="modal fade" id="serviceModal3" tabindex="-1" role="dialog" aria-labelledby="serviceModal3Label" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title wrkColor" id="serviceModal3Label">Photos & Videos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                                Photography & Videography - Clean and appealing visuals are essential for your brand. <br><br>
+                                Photos of your business, product, people are just 
+                                another way of telling you brands story. Other photography services 
+                                include events, life style, portrait, real estate, and modeling.<br><br>
+                                Videos are perfect to send a message about a new product,
+                                your business culture, information, a commercial and just about
+                                anything to continue to relay your brands message.
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+  
+                <!-- service box 4 begins -->
+                <div class = "serviceBox2 col-md-3 col-sm-12 pt-2 mt-2">
+                  <i class="fas fa-handshake clickable" data-toggle="modal" data-target="#serviceModal4"></i>
+                  <h3 class = "my-3">Consulting</h3>
+  
+                  <!-- modal -->
+                  <div class="modal fade" id="serviceModal4" tabindex="-1" role="dialog" aria-labelledby="serviceModal4Label" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title wrkColor" id="serviceModal4Label">Consulting</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                                Not sure which social media service is right for 
+                                your brand? Need guidance on how to use social media, 
+                                digital services, or traditional media? Why am I not 
+                                getting much engagement on my content?  
+                                THE WRK will help you build a marketing 
+                                plan that’s right for your brand. We can also 
+                                strategize new forms of marketing like social media 
+                                giveaways, call-to-action plans that lead into customer 
+                                discounts, or contacting influencers that are from your 
+                                local area that help you distribute your brands story.
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- princing button -->
+                <div class="priceButton col-12">
+                  <btn class ="btn pricing">See Pricing</btn>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- pricing -->
+      <div id = "pricing">
+        <div class = "container text-center">
+          <div class = "row text-center">
+            <div class="col-md-12 mt-4 mb-4">
+              <h1 class ="wrkColor wrkH1">Pricing</h1>
+              <img class= "workLine" src ="img/theWRKline.png" alt="underline">
+            </div>
+  
+            <!-- card 1 -->
+            <div class = "col-md-4 col-sm-12">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <i class="card-title fas fa-camera-retro fa-2x"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">Photos</h6>
+                  <ul class="card-text text-left">
+                    <li>Businesses & Product - $300 for 2 Hours (Photos of business, products, candid shots of employees & customers, and any other business needs) $100
+                      an hour after
+                    </li>
+                    <li>
+                      Events - $500 (up to six hours and includes editing)
+                    </li>
+                    <li>
+                      Photo Shoots - $350 (includes 2.5 hours of shooting time, 2-4 outfit changes/looks, Digital download of all your best photos, and retouching) $100 an hour after
+                    </li>
+                    <li>
+                      Real Estate - $200 per property. Includes digital download of all your best photos, and retouching.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- card 2 -->
+            <div class = "col-md-4 col-sm-12">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <i class="card-title fas fa-video fa-2x"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">Videos</h6>
+                  <ul>
+                    <li>
+                      Businesses & Product - Starts at $500 for 3.5 hours. $150 an hour after that
+                    </li>
+                    <li>
+                       Events - $750 (up to six hours and includes editing)
+                    </li>
+                    <li>
+                      Real Estate - $300 per property
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                  
+            <!-- card 3 -->
+            <div class = "col-md-4 col-sm-12">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <i class="card-title fas fa-handshake fa-2x"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">Consulting</h6>
+                  <ul>
+                    <li>
+                      First session is free $60 an hour after that.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+      <div id ="galleries" class ="pb-4">
+        <div class = "container text-center">
+          <div class ="row text-center pb-3">
+            <div class="col-md-12 mt-4 mb-4">
+              <h1 class ="wrkColor wrkH1">Gallery</h1>
+              <img class= "workLine" src ="img/theWRKline.png" alt="underLine">
+            </div>
+            <div class = "col-md-2 col-sm-6 mx-auto pt-3 mobileGallery">
+              <button class = "gBtn gBtn1 btn selected">Bussiness</button>
+            </div>
+            <div class = "col-md-2 col-sm-6 mx-auto pt-3 mobileGallery">
+              <button class = "gBtn gBtn2 btn">Photoshoots</button>
+            </div>
+            <div class = "col-md-2 col-sm-6 mx-auto pt-3 mobileGallery">
+              <button class = "gBtn gBtn3 btn">Graphics</button>
+            </div>
+            <div class = "col-md-2 col-sm-6 mx-auto pt-3 mobileGallery">
+              <button class = "gBtn gBtn4 btn">Products</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bussiness -->
+      <div class = "gallery galleryView1 currentView">
+        <div class="container gallery-container">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <h3 class = "webGallery">Business</h3>
+                <a class="lightbox" href="img/business/business1.JPG">
+                  <img src="img/business/business1.JPG" class="img-fluid" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business2.JPG"></a>
+                  <img src="img/business/business2.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business3.jpg">
+                  <img src="img/business/business3.jpg" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business4.jpg">
+                  <img src="img/business/business4.jpg" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business5.JPG">
+                  <img src="img/business/business5.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business6.jpg">
+                  <img src="img/business/business6.jpg" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business7.JPG">
+                  <img src="img/business/business7.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business8.jpg">
+                  <img src="img/business/business8.jpg" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business9.jpg">
+                  <img src="img/business/business9.jpg" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business10.JPG">
+                  <img src="img/business/business10.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business11.JPG">
+                  <img src="img/business/business11.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business12.JPG">
+                  <img src="img/business/business12.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business13.JPG">
+                  <img src="img/business/business13.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business14.JPG">
+                  <img src="img/business/business14.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 mobileGallery">
+                <a class="lightbox" href="img/business/business15.JPG">
+                  <img src="img/business/business15.JPG" class="img-fluid mobileGallery" alt="business photo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- photoshoots -->
+      <div class = "gallery galleryView2">
+          <div class="container gallery-container">
+            <div class="tz-gallery">
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <h3 class = "webGallery">PhotoShoots</h3>
+                  <a class="lightbox" href="img/photoshoots/photoshoots1.jpg">
+                    <img src="img/photoshoots/photoshoots1.jpg" class="img-fluid" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots2.jpg"></a>
+                    <img src="img/photoshoots/photoshoots2.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-12 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots3.jpg">
+                    <img src="img/photoshoots/photoshoots3.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots4.jpg">
+                    <img src="img/photoshoots/photoshoots4.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots5.jpg">
+                    <img src="img/photoshoots/photoshoots5.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots6.JPG">
+                    <img src="img/photoshoots/photoshoots6.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots7.JPG">
+                    <img src="img/photoshoots/photoshoots7.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots8.jpg">
+                    <img src="img/photoshoots/photoshoots8.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots9.jpg">
+                    <img src="img/photoshoots/photoshoots9.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots10.JPG">
+                    <img src="img/photoshoots/photoshoots10.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots11.jpg">
+                    <img src="img/photoshoots/photoshoots11.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots12.JPG">
+                    <img src="img/photoshoots/photoshoots12.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots13.jpg">
+                    <img src="img/photoshoots/photoshoots13.jpg" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots14.jpg">
+                    <img src="img/photoshoots/photoshoots14.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+                <div class="col-sm-6 col-md-4 mobileGallery">
+                  <a class="lightbox" href="img/photoshoots/photoshoots15.JPG">
+                    <img src="img/photoshoots/photoshoots15.JPG" class="img-fluid mobileGallery" alt="photoshoot picture" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- graphics -->
+        <div class = "gallery galleryView3">
+            <div class="container gallery-container">
+              <div class="tz-gallery">
+                <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                    <h3 class = "webGallery">Graphics</h3>
+                    <a class="lightbox" href="img/graphics/graphics1.JPG">
+                      <img src="img/graphics/graphics1.JPG" class="img-fluid" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics2.jpg"></a>
+                      <img src="img/graphics/graphics2.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-12 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics3.jpeg">
+                      <img src="img/graphics/graphics3.jpeg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics4.jpg">
+                      <img src="img/graphics/graphics4.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics5.jpg">
+                      <img src="img/graphics/graphics5.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics6.jpg">
+                      <img src="img/graphics/graphics6.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics7.jpg">
+                      <img src="img/graphics/graphics7.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics8.jpg">
+                      <img src="img/graphics/graphics8.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics9.jpg">
+                      <img src="img/graphics/graphics9.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics11.jpg">
+                      <img src="img/graphics/graphics11.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics12.jpg">
+                      <img src="img/graphics/graphics12.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mobileGallery">
+                    <a class="lightbox" href="img/graphics/graphics13.jpg">
+                      <img src="img/graphics/graphics13.jpg" class="img-fluid mobileGallery" alt="graphic picture" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- products -->
+          <div class = "gallery galleryView4">
+              <div class="container gallery-container">
+                <div class="tz-gallery">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <h3 class = "webGallery">Products</h3>
+                      <a class="lightbox" href="img/products/products1.jpg">
+                        <img src="img/products/products1.jpg" class="img-fluid" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products2.jpg"></a>
+                        <img src="img/products/products2.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products3.jpg">
+                        <img src="img/products/products3.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products4.jpg">
+                        <img src="img/products/products4.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products5.jpg">
+                        <img src="img/products/products5.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products6.jpg">
+                        <img src="img/products/products6.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products7.jpg">
+                        <img src="img/products/products7.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products8.jpg">
+                        <img src="img/products/products8.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products9.jpg">
+                        <img src="img/products/products9.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products10.jpg">
+                        <img src="img/products/products10.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products11.jpg">
+                        <img src="img/products/products11.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products12.jpg">
+                        <img src="img/products/products12.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mobileGallery">
+                      <a class="lightbox" href="img/products/products13.jpg">
+                        <img src="img/products/products13.jpg" class="img-fluid mobileGallery" alt="product picture" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+      <!-- contact  -->
+  
+      <div class = "contact pt-4 pb-4" id="contact">
+        <div class = "container text-center">
+          <div class = "row text-center">
+            <div class="col-md-12 mt-4 mb-4">
+              <h1 class ="wrkColor wrkH1">Contact</h1>
+              <img class= "workLine" src ="img/theWRKline.png" alt="underline">
+            </div>
+            <div class="col-md-12 mb-4">
+              <img class = "contactPic" src="img/contactPic.jpg" alt="contact picture">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href ="mailto:theWrkphotos@gmail.com">
+                <i class="wrkColor fas fa-envelope fa-2x"></i><p>TheWRKPhotos@gmail.com</p></a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <i class="wrkColor fa fa-map-marker fa-2x"></i>
+              <p>Garfield <br> NJ, 07026</p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <i class="wrkColor fa fa-phone fa-2x"></i>
+              <p> (201) 290-2001 </p>
+            </div>
+            <div class="col-md-6 col-sm-6 mt-4">
+              <a href="https://www.instagram.com/thewrk/" target="_blank">
+                <i class="wrkColor fab fa-instagram fa-2x"></i>
+              <p>@TheWRK</p></a>
+            </div>
+            <div class="col-md-6 col-sm-6 mt-4">
+              <a href="https://www.linkedin.com/in/thewrk/" target="_blank">
+                <i class="wrkColor fab fa-linkedin fa-2x"></i>
+              <p>LinkedIn</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run(".tz-gallery");
+    </script>
+        <!-- bootstrap scripts -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBdRe52OvoIeOgU0itNI_ep0fdaGHhRyoY",
+    authDomain: "thewrk-50ec2.firebaseapp.com",
+    databaseURL: "https://thewrk-50ec2.firebaseio.com",
+    projectId: "thewrk-50ec2",
+    storageBucket: "thewrk-50ec2.appspot.com",
+    messagingSenderId: "820861375121"
+  };
+  firebase.initializeApp(config);
+</script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <!-- my java script tag -->
+      <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ["auth", "database", "messaging", "storage"].filter(
+            feature => typeof app[feature] === "function"
+          );
+          document.getElementById(
+            "load"
+          ).innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById("load").innerHTML =
+            "Error loading the Firebase SDK, check the console.";
+        }
+      });
+    </script> -->
+  </body>
+</html>
